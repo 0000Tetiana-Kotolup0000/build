@@ -13,6 +13,11 @@
 
 
 $(document).ready(function(){
+
+    // pripojeni_knihony
+
+    new WOW().init();
+
     var button = $('#button');
     var modal = $('#modal');
     var close = $('#close');
@@ -24,7 +29,7 @@ $(document).ready(function(){
     close.on('click', function(){
         modal.removeClass('modal_active');
     });
-
+    // napojeni slideru то что я  не понимаю
     $('.slider').slick({
         slidesToShow: 3,
         prevArrow: $('.arrows__left'),
