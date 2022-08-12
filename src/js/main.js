@@ -29,6 +29,24 @@ $(document).ready(function(){
     close.on('click', function(){
         modal.removeClass('modal_active');
     });
+
+
+   //validace formularu
+   $('#brief-form').validate({
+    rules:{
+      username: "required",
+      email:{
+        required: true,
+        email:true
+      }
+    },
+    messages: {
+      username: "Uvedte prosim vaše jméno",
+      email: "Potřebujeme váš email"
+    }
+   });
+
+
     // napojeni slideru то что я  не понимаю
     $('.slider').slick({
         slidesToShow: 3,

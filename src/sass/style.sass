@@ -399,6 +399,164 @@ img
     
 
 
+
+.brief
+    
+    background-size: 50%, cover
+    background-repeat: repeat-y, no-repead
+    padding: 100px 
+    background-position: left center, center right
+    @media (max-width: 768px)
+        background-size: 100% 50%, cover
+        background-repeat: repeat-x, no-repead
+        padding: 100px 0
+        background-position: left center, center bottom
+        padding: 50px
+    &-block
+        display: flex
+        @media (max-width: 768px)
+            flex-direction: column
+        
+
+    &__interview
+        flex-basis: 50%
+        background-color: $buttons
+
+    &__form
+        flex-basis: 50%
+        //background-color: $grey
+        padding-left: 200px
+        text-align: center
+        @media (max-width: 1200px)
+            padding-left: 30px
+        @media (max-width: 768px)
+            padding-left: 0
+    &__input
+        width: 100%
+        min-width: 370px
+        margin-bottom: 15px
+    &__button
+        width: 100%
+        min-width: 370px
+        display: block
+        height: 70px 
+        margin: 15px auto 30px auto
+
+  
+
+.interview
+    padding-right: 70px
+    @media (max-width: 1200px)
+        padding-right: 30px
+    &__title
+        +bold 
+        font-size: 22px
+        line-height: 33px
+        margin-bottom: 50px
+        @media (max-width: 1200px)
+            font-size: 18px
+            margin-bottom: 40px
+    &__subtitle
+        font-size: 16px 
+        margin-bottom: 100px
+        display: block
+        @media (max-width: 1200px)
+            font-size: 14px
+            margin-bottom: 30px
+    &-list 
+        list-style-type: none
+        padding: 0
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+            +bold 
+        &__counter
+            width: 35px
+            height: 35px
+            border: 2px solid $text-color
+            display: inline-block
+            text-align: center
+            line-height: 35px
+            border-radius: 50px
+            margin-right: 30px
+            font-size: 14px
+            @media (max-width: 1200px)
+                margin-right: 20px
+                margin-bottom: 40px
+        &__text
+            min-width: 400px
+            font-size: 18px
+            @media (max-width: 1200px)
+                font-size: 14px
+                min-width: 300px
+
+.from
+    &__title
+        +bold 
+        font-size: 22px
+        line-height: 33px
+        margin-bottom: 50px
+        @media (max-width: 1200px)
+            margin-bottom: 18px
+            font-size: 18px
+            margin-top: 150px
+    &__subtitle
+        font-size: 16px 
+        margin-bottom: 50px
+        display: block
+        @media (max-width: 1200px)
+            font-size: 14px
+            margin-bottom: 14px
+    &__descrption
+        font-size: 15px
+
+.footer
+    position: relative
+
+
+.map
+    width: 50%
+    position: absolute
+    left: 0
+    top: 0
+
+.contacts
+    flex-basis: 50%
+    padding-top: 100px
+    padding-left: 200px
+    &-block 
+        display: flex
+        justify-content: flex-end
+    &__title
+        +bold 
+        font-size: 24px
+        line-height: 33px
+        margin-bottom: 100px
+    &-list 
+        padding: 0
+        list-style-type: none
+        &__icon
+            width: 20px
+            height: 20px
+            text-align: center
+            line-height: 20px
+            margin-right: 20px
+        &__item
+            display: flex
+            align-items: flex-start
+            margin-bottom: 40px
+            strong
+                +bold 
+        &__text
+            line-height: 1.4
+            a
+                color: $text-color
+                text-decoration: none
+                &:hover
+                    text-decoration: underline
+
+
 .modal
     position: fixed
     left: 0
@@ -420,5 +578,11 @@ img
             position: absolute
             right: 0
             top: 0
+
+
+.error
+    border: 3px solid red
+
+
 
         
